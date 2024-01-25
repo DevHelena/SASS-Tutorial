@@ -1,0 +1,10 @@
+@use '../abstact/variables';
+@use '../abstact/mixins';
+
+footer{
+    background: variables.$cor-quaternaria;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+    @include mixins.ff-fs-cl(variables.$ft-textos, 1rem, variables.$cor-primaria);
+}
