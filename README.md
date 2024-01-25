@@ -6,7 +6,9 @@ Visit this URL to view the page: https://devhelena.github.io/Calmaria-SPA/
 
 ## Author
 Name: Helena Maia
+
 LinkedIn: https://www.linkedin.com/in/devhelena/
+
 E-mail: helenaaraujo.dev@gmail.com
 
 ## About SASS
