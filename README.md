@@ -76,6 +76,98 @@ $secondary-color: #2ecc71;
 In this example, `$primary-color` and `$secondary-color` are declared as variables storing color values. These variables are then used in the `.element` selector to define the background color and text color. If you later decide to change the color scheme, you can simply update the variable values, and the changes will be reflected throughout the stylesheet.
 
 
+### `&` in SASS
+In SASS, the `&` symbol is a powerful feature that allows you to reference the parent selector within nested contexts. It is commonly used to generate more specific or contextual selectors.
+```scss
+.button {
+  color: #3498db;
+
+  &:hover {
+    background-color: #3498db;
+  }
+
+  &.active {
+    border: 2px solid #3498db;
+  }
+}
+```
+- `:hover` Selector:
+  
+  The `&` allows you to reference the parent `.button` selector within the `:hover` context. This generates a more specific selector: `.button:hover`.
+- Class Modification:
+  
+  The `&` is used with `.active` to create a more specific selector: `.button.active`. This is helpful when styling elements with specific states.
+
+Advanced Usage:
+```scss
+.panel {
+  &.primary {
+    background-color: #3498db;
+
+    &-header {
+      font-size: 18px;
+    }
+
+    &-content {
+      padding: 20px;
+    }
+  }
+
+  &.secondary {
+    background-color: #2ecc71;
+
+    &-header,
+    &-content {
+      color: #fff;
+    }
+  }
+}
+```
+- Nested Element Selectors:
+
+  The `&` is used to create more specific selectors for different variations of the `.panel component`, such as `.panel.primary` and `.panel.secondary`.
+- Element Parts:
+
+  The `&-header` and `&-content` references allow you to generate more specific selectors based on the parent context.
+
+Resulting CSS:
+```css
+.button {
+  color: #3498db;
+}
+
+.button:hover {
+  background-color: #3498db;
+}
+
+.button.active {
+  border: 2px solid #3498db;
+}
+
+.panel.primary {
+  background-color: #3498db;
+}
+
+.panel.primary-header {
+  font-size: 18px;
+}
+
+.panel.primary-content {
+  padding: 20px;
+}
+
+.panel.secondary {
+  background-color: #2ecc71;
+}
+
+.panel.secondary-header,
+.panel.secondary-content {
+  color: #fff;
+}
+```
+The `&` symbol simplifies the process of creating modular and maintainable styles, providing a clear and concise way to generate contextual selectors.
+
+
 ### `@mixins` in SASS
 Mixins in SASS allow you to group together a set of styles and reuse them across different selectors. They are particularly useful for encapsulating reusable patterns or complex styles.
 
