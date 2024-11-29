@@ -1,9 +1,6 @@
 # Calmaria SPA Project
 A project made especially to demonstrate and practice my **SASS** skills
 
-## Preview
-Visit this URL to view the page: https://devhelena.github.io/Calmaria-SPA/
-
 ## Author
 Name: Helena Maia
 
