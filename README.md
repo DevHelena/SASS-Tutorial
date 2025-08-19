@@ -1,12 +1,10 @@
 # Calmaria SPA Project
-A project made especially to demonstrate and practice my **SASS** skills
+Project developed with HTML and [SASS](https://sass-lang.com/documentation/), with the goal of serving as a practical tutorial and demonstrating my skills in using this CSS preprocessor.
 
-## Author
-Name: Helena Maia
-
-LinkedIn: https://www.linkedin.com/in/devhelena/
-
-E-mail: helenaaraujo.dev@gmail.com
+## 👩‍💻 Author
+**Helena Maia**
+- [LinkedIn](https://www.linkedin.com/in/devhelena/)
+- [Portfolio](https://helenamaiadev.com/)
 
 ## About SASS
 ### Installation
